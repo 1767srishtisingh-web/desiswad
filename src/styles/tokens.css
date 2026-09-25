@@ -1,0 +1,69 @@
+/* =========================================================
+   DesiSwad — design tokens
+   Change a value here and it changes everywhere.
+   ========================================================= */
+
+:root {
+  /* --- Brand colour system (required variable names) --- */
+  --primary: #e85d1f; /* warm orange  */
+  --secondary: #96162e; /* deep red     */
+  --accent: #f5b301; /* golden       */
+  --background: #fff6e9; /* cream        */
+  --surface: #fffdf8; /* card surface */
+  --text: #241410; /* dark cocoa   */
+  --muted: #7a6455; /* muted text   */
+
+  /* --- Supporting tints (derived, safe to edit) --- */
+  --primary-soft: #fde3d3;
+  --primary-deep: #c44a13;
+  --secondary-soft: #f7dee2;
+  --accent-soft: #ffeec2;
+  --leaf: #17614c; /* pudina green, used only for trust ticks */
+  --leaf-soft: #dcefe7;
+  --line: #eadbc6;
+  --line-strong: #d9c2a6;
+  --ink-05: rgba(36, 20, 16, 0.05);
+  --ink-10: rgba(36, 20, 16, 0.1);
+  --ink-60: rgba(36, 20, 16, 0.6);
+
+  /* --- Typography --- */
+  --font-display: "Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
+  --font-body: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --step--1: clamp(0.82rem, 0.8rem + 0.1vw, 0.88rem);
+  --step-0: clamp(1rem, 0.97rem + 0.16vw, 1.08rem);
+  --step-1: clamp(1.18rem, 1.1rem + 0.35vw, 1.4rem);
+  --step-2: clamp(1.42rem, 1.26rem + 0.7vw, 1.9rem);
+  --step-3: clamp(1.7rem, 1.4rem + 1.3vw, 2.6rem);
+  --step-4: clamp(2.1rem, 1.55rem + 2.3vw, 3.6rem);
+  --step-5: clamp(2.5rem, 1.6rem + 3.9vw, 5rem);
+
+  /* --- Space --- */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+  --sp-9: 6rem;
+
+  /* --- Shape --- */
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 22px;
+  --r-xl: 32px;
+  --r-pill: 999px;
+
+  /* --- Elevation (warm, not grey) --- */
+  --shadow-sm: 0 1px 2px rgba(120, 66, 30, 0.08);
+  --shadow-md: 0 10px 24px -14px rgba(120, 66, 30, 0.45);
+  --shadow-lg: 0 28px 60px -30px rgba(120, 66, 30, 0.55);
+
+  /* --- Layout --- */
+  --wrap: 1180px;
+  --wrap-narrow: 760px;
+  --nav-h: 68px;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}

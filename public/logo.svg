@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DesiSwad temporary logo">
+  <title>DesiSwad temporary logo</title>
+  <rect x="8" y="24" width="48" height="32" rx="6" fill="#E85D1F"/>
+  <rect x="8" y="24" width="48" height="10" rx="5" fill="#96162E"/>
+  <path d="M32 24v32" stroke="#FFF6E9" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+  <circle cx="32" cy="16" r="9" fill="#F5B301"/>
+  <path d="M29.1 13.3c.2-1.9 1.5-3.1 3.2-3.1 1.8 0 3.1 1.1 3.1 2.7 0 1.3-.7 2-1.9 2.8-1 .7-1.3 1.1-1.3 1.9v.5h-2.1v-.7c0-1.3.5-2.1 1.7-2.9.9-.6 1.3-1 1.3-1.6 0-.7-.5-1.1-1.2-1.1-.7 0-1.2.4-1.3 1.2l-1.5.3zm1.8 8.5a1.3 1.3 0 1 1 2.6 0 1.3 1.3 0 0 1-2.6 0z" fill="#241410"/>
+  <path d="M18 38h6M40 44h8" stroke="#FFF6E9" stroke-width="3" stroke-linecap="round" opacity=".4"/>
+</svg>

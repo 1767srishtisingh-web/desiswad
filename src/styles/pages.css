@@ -1,0 +1,338 @@
+/* =========================================================
+   Page-specific layouts
+   ========================================================= */
+
+.pagehead {
+  padding-block: clamp(2rem, 5vw, 3.6rem) clamp(1.4rem, 3vw, 2.2rem);
+  background:
+    radial-gradient(70% 90% at 90% 0%, var(--accent-soft) 0%, transparent 60%),
+    var(--background);
+  border-bottom: 1px solid var(--line);
+}
+
+.pagehead__crumb {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.pagehead__crumb a {
+  text-decoration: none;
+}
+
+.pagehead__crumb a:hover {
+  text-decoration: underline;
+}
+
+.pagehead h1 {
+  font-size: var(--step-4);
+  margin-bottom: 0.6rem;
+}
+
+.pagehead p {
+  color: var(--muted);
+  font-size: var(--step-1);
+  margin: 0;
+}
+
+/* ---------------- Order page ---------------- */
+
+.order {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 2.6rem);
+  grid-template-columns: 1.35fr 0.65fr;
+  align-items: start;
+}
+
+.formcard {
+  padding: clamp(1.2rem, 3vw, 2rem);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+}
+
+.formcard + .formcard {
+  margin-top: var(--sp-5);
+}
+
+.formcard > h2 {
+  font-size: var(--step-2);
+  margin-bottom: 0.25rem;
+}
+
+.formcard > h2 + p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: var(--sp-5);
+}
+
+.fieldrow {
+  display: grid;
+  gap: 0 var(--sp-4);
+  grid-template-columns: 1fr 1fr;
+}
+
+.summary {
+  position: sticky;
+  top: calc(var(--nav-h) + 1.2rem);
+  padding: var(--sp-5);
+  border-radius: var(--r-lg);
+  background: linear-gradient(160deg, #fff 0%, #fff3e1 100%);
+  border: 1.5px solid var(--line-strong);
+  box-shadow: var(--shadow-md);
+}
+
+.summary h2 {
+  font-size: 1.25rem;
+  margin-bottom: var(--sp-4);
+}
+
+.summary__line {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.45rem 0;
+  font-size: 0.96rem;
+  border-bottom: 1px dashed var(--line-strong);
+}
+
+.summary__line span:last-child {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.summary__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-top: var(--sp-4);
+  padding-top: var(--sp-3);
+  border-top: 2px solid var(--text);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.summary__note {
+  margin-top: var(--sp-4);
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+/* ---------------- Success screen ---------------- */
+
+.success {
+  text-align: center;
+  display: grid;
+  gap: 0.6rem;
+  justify-items: center;
+}
+
+.success__emoji {
+  font-size: 3rem;
+  line-height: 1;
+  animation: pop 0.5s var(--ease);
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.success h2 {
+  font-size: var(--step-3);
+  margin: 0;
+}
+
+.success__id {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: 0.06em;
+  padding: 0.45rem 1rem;
+  border-radius: var(--r-pill);
+  background: var(--accent-soft);
+  border: 1px dashed var(--line-strong);
+}
+
+.success__meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+  width: 100%;
+  margin-top: var(--sp-4);
+  text-align: left;
+}
+
+.success__meta div {
+  padding: 0.7rem 0.85rem;
+  border-radius: var(--r-md);
+  background: var(--background);
+  border: 1px solid var(--line);
+}
+
+.success__meta dt {
+  font-size: 0.74rem;
+  color: var(--muted);
+}
+
+.success__meta dd {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+/* ---------------- Order history / feedback ---------------- */
+
+.orderrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+  padding: 0.9rem 1rem;
+  border-radius: var(--r-md);
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.orderrow__id {
+  font-family: var(--font-display);
+  font-weight: 800;
+}
+
+.orderrow__meta {
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+.orderrow__right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.rating {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.rating button {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  border: 1.5px solid var(--line-strong);
+  background: var(--surface);
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.rating button[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+/* ---------------- About ---------------- */
+
+.about {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: start;
+}
+
+.mission {
+  padding: var(--sp-6);
+  border-radius: var(--r-xl);
+  background: var(--text);
+  color: #fff;
+}
+
+.mission h3 {
+  color: var(--accent);
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.mission p {
+  color: #f0dccb;
+  font-family: var(--font-display);
+  font-size: var(--step-2);
+  line-height: 1.25;
+  margin: 0;
+}
+
+.values {
+  list-style: none;
+  padding: 0;
+  margin: var(--sp-5) 0 0;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.values li {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  margin: 0;
+}
+
+.values svg {
+  flex: none;
+  color: var(--primary);
+  margin-top: 4px;
+}
+
+/* ---------------- 404 ---------------- */
+
+.notfound {
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding-block: var(--sp-8);
+}
+
+.notfound__code {
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 18vw, 9rem);
+  font-weight: 800;
+  line-height: 0.9;
+  color: var(--primary-soft);
+  -webkit-text-stroke: 2px var(--primary);
+}
+
+/* ---------------- Responsive ---------------- */
+
+@media (max-width: 900px) {
+  .order,
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .summary {
+    position: static;
+  }
+}
+
+@media (max-width: 620px) {
+  .fieldrow {
+    grid-template-columns: 1fr;
+  }
+  .success__meta {
+    grid-template-columns: 1fr;
+  }
+}

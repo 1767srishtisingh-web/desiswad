@@ -1,0 +1,6 @@
+/* DesiSwad global stylesheet — import order matters (tokens first) */
+@import "./styles/tokens.css";
+@import "./styles/base.css";
+@import "./styles/components.css";
+@import "./styles/sections.css";
+@import "./styles/pages.css";
